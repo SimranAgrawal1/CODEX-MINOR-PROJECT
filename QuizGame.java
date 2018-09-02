@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class minor
 {
 	static Scanner sc=new Scanner(System.in);
+	static int point=0;
 	public static void main(String args[])
 	{
 		int RESULT=0;
@@ -21,7 +22,6 @@ public class minor
 	}
 	public static int general()
 	{
-		int point=0;
 		String[] gen=new String[10];
 		gen[0]="In internet terminology IP means";
 		gen[1]="The first page of a website is called the?";
@@ -42,12 +42,20 @@ public class minor
 			{
 				point++;
 			}
+			else
+			{
+				s=s.replaceAll("\\s", "");
+				solution[i]=solution[i].replaceAll("\\s", "");
+				if(solution[i].equals(s.toUpperCase()))
+				{
+					point++;
+				}
+			}
 		}
 		return point;
 	}
 	public static int easy()
 	{
-		int point=0;
 		System.out.println("ROUND-2:");
 		System.out.println();
 		String[] easy=new String[10];
@@ -70,13 +78,21 @@ public class minor
 			{
 				point++;
 			}
+			else
+			{
+				s=s.replaceAll("\\s", "");
+				solution[i]=solution[i].replaceAll("\\s", "");
+				if(solution[i].equals(s.toUpperCase()))
+				{
+					point++;
+				}
+			}
 		}
 		return point;
 
 	}
 	public static int medium()
 	{
-		int point=0;
 		System.out.println("ROUND-2:");
 		System.out.println();
 		String[] med=new String[10];
@@ -99,13 +115,21 @@ public class minor
 			{
 				point++;
 			}
+			else
+			{
+				s=s.replaceAll("\\s", "");
+				solution[i]=solution[i].replaceAll("\\s", "");
+				if(solution[i].equals(s.toUpperCase()))
+				{
+					point++;
+				}
+			}
 		}
 		return point;
 
 	}
 	public static int tough()
 	{
-		int point=0;
 		System.out.println("ROUND-2:");
 		System.out.println();
 		String[] hard=new String[10];
@@ -127,6 +151,15 @@ public class minor
 			if(solution[i].equals(s.toUpperCase()))
 			{
 				point++;
+			}
+			else
+			{
+				s=s.replaceAll("\\s", "");
+				solution[i]=solution[i].replaceAll("\\s", "");
+				if(solution[i].equals(s.toUpperCase()))
+				{
+					point++;
+				}
 			}
 		}
 		return point;
