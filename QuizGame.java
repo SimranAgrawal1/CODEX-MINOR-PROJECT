@@ -13,7 +13,7 @@ public class minor
 		System.out.println();
 		if(score<5)
 			RESULT=easy();
-		else if(score>5 && score<8)
+		else if(score>=5 && score<8)
 			RESULT=medium();
 		else
 			RESULT=tough();
