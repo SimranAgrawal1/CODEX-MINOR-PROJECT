@@ -44,7 +44,7 @@ public class minor
 			}
 			else
 			{
-				s=s.replaceAll("\\s", "");
+				s=s.replaceAll(" ", "");
 				solution[i]=solution[i].replaceAll("\\s", "");
 				if(solution[i].equals(s.toUpperCase()))
 				{
@@ -80,7 +80,7 @@ public class minor
 			}
 			else
 			{
-				s=s.replaceAll("\\s", "");
+				s=s.replaceAll(" ", "");
 				solution[i]=solution[i].replaceAll("\\s", "");
 				if(solution[i].equals(s.toUpperCase()))
 				{
@@ -117,7 +117,7 @@ public class minor
 			}
 			else
 			{
-				s=s.replaceAll("\\s", "");
+				s=s.replaceAll(" ", "");
 				solution[i]=solution[i].replaceAll("\\s", "");
 				if(solution[i].equals(s.toUpperCase()))
 				{
@@ -154,7 +154,7 @@ public class minor
 			}
 			else
 			{
-				s=s.replaceAll("\\s", "");
+				s=s.replaceAll(" ", "");
 				solution[i]=solution[i].replaceAll("\\s", "");
 				if(solution[i].equals(s.toUpperCase()))
 				{
