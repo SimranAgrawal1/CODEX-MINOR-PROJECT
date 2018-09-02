@@ -56,6 +56,7 @@ public class minor
 	}
 	public static int easy()
 	{
+		point=0;
 		System.out.println("ROUND-2:");
 		System.out.println();
 		String[] easy=new String[10];
@@ -93,6 +94,7 @@ public class minor
 	}
 	public static int medium()
 	{
+		point=0;
 		System.out.println("ROUND-2:");
 		System.out.println();
 		String[] med=new String[10];
@@ -130,6 +132,7 @@ public class minor
 	}
 	public static int tough()
 	{
+		point=0;
 		System.out.println("ROUND-2:");
 		System.out.println();
 		String[] hard=new String[10];
